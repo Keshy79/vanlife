@@ -70,3 +70,18 @@ text-align: end;
   }
 }
   
+.no-underline{
+  color: grey;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+.no-underline:hover{
+  color: grey;
+  text-decoration: underline;
+  margin-right: 1rem;
+}
+.underline{
+  text-decoration: underline;
+  color: grey;
+  margin-right: 1rem;
+}

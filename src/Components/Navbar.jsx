@@ -3,34 +3,39 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     const NavLinks = [
-        { name: "#VANLIFE", path: "/" },
-        { name: "About", path: "/about" },
-        { name: "Vans", path: "/van" },
-        { name: "Sign-in", path: "/Signin" },
-      ];
-  return (
-    <>
-    <div className='px-5 py-3 text-black' style={{backgroundColor: "#fff7ed"}}>
-        <ul className='navbar'>
-        <div className='nav flex-row gap-5'> 
+      { name: "About", path: "/about" },
+      { name: "Vans", path: "/van" },
+      { name: "Sign-in", path: "/Signin" },
+    ];
+    return (
+      <>
+    <div className='max-w-8xl mx-auto px-4 sm:px-6 lg:px-8' style={{backgroundColor: "#fff7ed"}}>
+        <div className='navbar items-center justify-between'>
+          <div className='item-center'>
+            <NavLink to='/' style={{ textDecoration: 'none', color: "black", fontSize: "30px", fontWeight: "bold"}}>
+              #vanlife
+            </NavLink>
+          </div>
+        <div className='mx-6 items-baseline text-xs lg:space-x-5 space-x-5 md:text-sm'> 
         {NavLinks.map((link)=>(
           <NavLink
             className={({ isActive }) =>
               isActive 
-              ? "fw-bold text-dark text-decoration-underline" 
-              : null
+              ? " underline" 
+              : "no-underline"
             }
             key={link.name}
             to={link.path}
-            style={{textDecoration: 'none', color: "#908d89"}}
+            // style={{textDecoration: 'none', color: "#908d89"}}
+            activeclassname="text-gray-300"
           >
-            <li>{link.name}</li>
+            {link.name}
           </NavLink>
         )
 
         )}
         </div>
-    </ul>
+        </div>
     </div>
     
     </>
