@@ -10,7 +10,7 @@ const Van = () => {
     <>
     <div className='container-fluid'>
     <div>
-        <h3>Explore our van options</h3>
+        <h3 className='explore'>Explore our van options</h3>
     </div>
 
     <div className="container-fluid">
@@ -27,7 +27,7 @@ const Van = () => {
       <div className="row">
         <div className="col-sm-6 col-lg-3 col-md-6 mb-4">
           <img src={brown} className='img-fluid' style={{width: '%'}} alt="" />
-          <div className='d-flex gap-5'>
+          <div className='d-flex justify-content-between'>
             <h4>Modest Explorer</h4>
             <p>$60 <br /><span>/day</span></p>
           </div>
@@ -35,7 +35,7 @@ const Van = () => {
         </div>
         <div className="col-sm-6 col-lg-3 col-md-6">
           <img src={brown} className='img-fluid' style={{width: '%'}} alt="" />
-          <div className='d-flex gap-5'>
+          <div className='d-flex justify-content-between'>
             <h4>Modest Explorer</h4>
             <p>$60 <br /><span>/day</span></p>
           </div>
@@ -43,7 +43,7 @@ const Van = () => {
         </div>
         <div className="col-sm-6 col-lg-3 col-md-6">
           <img src={brown} className='img-fluid' style={{width: '%'}} alt="" />
-          <div className='d-flex gap-5'>
+          <div className='d-flex justify-content-between'>
             <h4>Modest Explorer</h4>
             <p>$60 <br /><span>/day</span></p>
           </div>
@@ -51,7 +51,7 @@ const Van = () => {
         </div>
         <div className="col-sm-6 col-lg-3 col-md-6">
           <img src={brown} className='img-fluid' style={{width: '%'}} alt="" />
-          <div className='d-flex gap-5'>
+          <div className='d-flex justify-content-between'>
             <h4>Modest Explorer</h4>
             <p>$60 <br /><span>/day</span></p>
           </div>

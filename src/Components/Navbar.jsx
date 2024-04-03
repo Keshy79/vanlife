@@ -1,11 +1,16 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
+import { useState } from 'react'
+import Logo from '../assets/Images/logo.png'
 
 const Navbar = () => {
+  const [moreAdditionalLink, setmoreAdditionalLink] = useState(false)
+  const toggleAdditionalLink = () => {
+    setmoreAdditionalLink(!moreAdditionalLink)
+  }
     const NavLinks = [
       { name: "About", path: "/about" },
       { name: "Vans", path: "/van" },
-      { name: "Sign-in", path: "/Signin" },
     ];
     return (
       <>
@@ -13,27 +18,30 @@ const Navbar = () => {
         <div className='navbar items-center justify-between'>
           <div className='item-center'>
             <NavLink to='/' style={{ textDecoration: 'none', color: "black", fontSize: "30px", fontWeight: "bold"}}>
-              #vanlife
+              #VANLIFE
             </NavLink>
           </div>
-        <div className='mx-6 items-baseline text-xs lg:space-x-5 space-x-5 md:text-sm'> 
-        {NavLinks.map((link)=>(
+        <div className='right-nav mx-6 items-baseline text-xs lg:space-x-5 space-x-5 md:text-sm'> 
+        {moreAdditionalLink && (
           <NavLink
-            className={({ isActive }) =>
-              isActive 
-              ? " underline" 
-              : "no-underline"
-            }
-            key={link.name}
-            to={link.path}
-            // style={{textDecoration: 'none', color: "#908d89"}}
-            activeclassname="text-gray-300"
-          >
-            {link.name}
+          to='/Host'
+          className="no-underline">
+            Host
           </NavLink>
-        )
-
         )}
+          <Link to ={"/about"}>
+          <div>
+            <a href="">About</a>
+          </div>
+          </Link>
+          <Link to = {"/van"}>
+          <div>
+            <a href="">Vans</a>
+          </div>
+          </Link>
+        <NavLink to='/signin' onClick={toggleAdditionalLink} style={{ textDecoration: 'none', color: "black", fontSize: "30px", fontWeight: "bold"}}>
+             <img src={Logo} alt="" />
+            </NavLink>
         </div>
         </div>
     </div>
