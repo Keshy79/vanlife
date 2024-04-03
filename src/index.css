@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.travel {
+  font-size: 40px;
+}
+
+#text{
+  margin-left: 50%;
+}
+
+#rw{
+  margin-top: -30%
+}
+
+.simple {
+  background-color: #ffead0;
+  color: gray;
+  height: 30px;
+  text-align: center;
+  font-weight: 700;
+  border: none;
+}
+
+.simple2 {
+  background-color: #e17654;
+  width: 28%;
+  height: 40px;
+  text-align: center;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.day {
+
+text-align: end;
+}
+.btn {
+  background-color: #ffead0;
+  border: 3px solid red;
+}
+@media screen and (max-width: 768px) {
+  .travel {
+    font-size: 20px;
+   
+  }
+  .Add {
+    font-size: 10px;
+    
+  }
+  .van {
+    width: 100%;
+    bottom: -50%;
+  }
+  .cover {
+    height: "0px";
+     background-Size: "cover";
+      position: "absolute",
+  }
+
+  #text{
+    margin-left: 10%;
+    margin-top: 0;
+  }
+
+  #rw{
+    margin-top: -90%
+  }
+}
+  
