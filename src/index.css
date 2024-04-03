@@ -44,7 +44,10 @@
 
 .simple {
   background-color: #FFEAD0;
-  ;
+  border: none;
+  border-radius: 5px;
+  width: 30%;
+  height: 50%;
 }
 .explore {
   font-size: 50px;
