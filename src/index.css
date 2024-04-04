@@ -47,12 +47,113 @@
   border: none;
   border-radius: 5px;
   width: 30%;
-  height: 50%;
+  /* height: 50%; */
 }
 .explore {
   font-size: 50px;
   font-weight: 800;
   padding: 100px 10px 40px 10px;
+}
+
+.welcome {
+  background-color: #FFEAD0;
+  height: 38vh;
+}
+
+.welcome span {
+  color: gray;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.listed {
+  background-color: #FFF7ED;
+  
+}
+.income {
+background-color: #FFF7ED;
+
+}
+.score {
+  background-color: #FFDDB2;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.score img {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+.host {
+  background-color: #FFF7ED;
+  height: 100vh;
+}
+
+.all {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.view {
+  font-weight: 600;
+}
+
+.edit {
+  background-color: white;
+  /* width: 50%; */
+  border-radius: 9px;
+  padding: 10px;
+}
+
+.edit img {
+  height: 80px;
+  width: 80px;
+}
+
+.listed {
+  font-size: 30px;
+  font-weight: 700;
+}
+.score span {
+  font-weight: 800;
+  padding: 10px;
+}
+.welcome h2 {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.details {
+  font-weight: 600;
+}
+
+.underline {
+  text-decoration: none;
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+.no-underline {
+  text-decoration: none;
+  color: grey;
+}
+
+.dev {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: white;
+  border-radius: 10px;
+  /* padding-top: 10px; */
+}
+
+.dev img {
+  height: 100px;
 }
 
 @media (max-width:450px){
@@ -65,5 +166,13 @@
     position: absolute;
     top: 200px;
     color: white;
+  }
+
+  .simple {
+    background-color: #FFEAD0;
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    gap: 20px;
   }
 }

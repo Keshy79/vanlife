@@ -24,21 +24,27 @@ const Navbar = () => {
         <div className='right-nav mx-6 items-baseline text-xs lg:space-x-5 space-x-5 md:text-sm'> 
         {moreAdditionalLink && (
           <NavLink
-          to='/Host'
-          className="no-underline">
+          to='/Host/Dashboard'
+          className={({isActive}) =>
+          isActive ? "underline" : "no-underline"
+        }>
             Host
           </NavLink>
         )}
-          <Link to ={"/about"}>
+          <NavLink to ={"/about"} className={({isActive}) =>
+          isActive ? "underline" : "no-underline"
+        }>
           <div>
             <a href="">About</a>
           </div>
-          </Link>
-          <Link to = {"/van"}>
+          </NavLink>
+          <NavLink to = {"/van"} className={({isActive}) =>
+          isActive ? "underline" : "no-underline"
+        }>
           <div>
             <a href="">Vans</a>
           </div>
-          </Link>
+          </NavLink>
         <NavLink to='/signin' onClick={toggleAdditionalLink} style={{ textDecoration: 'none', color: "black", fontSize: "30px", fontWeight: "bold"}}>
              <img src={Logo} alt="" />
             </NavLink>
